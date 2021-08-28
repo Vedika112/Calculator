@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="calCss.css">
+        <title>My Calci</title>
+        <div class ="t">
+            <h1>
+                <br> MY</br> CALCULATOR</h1>
+          
+            
+        </div>
+
+
+    </head>
+    <form name="f1" class="calci" action="calc.html" method="POST">
+        <input type="text" name="ans" id="display">
+        <br> 
+            </br>
+        <input type="button" class="btn" value="C" onclick="f1.ans.value='' ">
+        <input type="button" class="btn" value="<" onclick="f1.ans.value+=f1.ans.value.substring(0,f1.ans.value.length*1-1) ">
+        <input type="button" class="btn" value="00" onclick="f1.ans.value+='00' ">
+        <input type="button" class="op" value="/" onclick="f1.ans.value+='/' ">
+        
+        
+        <br>
+        </br>
+      <input type="button" class="btn" value="7" onclick="f1.ans.value+='7' ">
+      <input type="button" class="btn" value="8" onclick="f1.ans.value+='8' ">
+      <input type="button" class="btn" value="9" onclick="f1.ans.value+='9' ">
+      <input type="button" class="op" value="*" onclick="f1.ans.value+='*' ">
+      <br> 
+            </br>
+      <input type="button" class="btn" value="4" onclick="f1.ans.value+='4' ">
+      <input type="button" class="btn" value="5" onclick="f1.ans.value+='5' ">
+      <input type="button" class="btn" value="6" onclick="f1.ans.value+='6' ">
+      <input type="button" class="op" value="+" onclick="f1.ans.value+='+' ">
+      <br> 
+            </br>
+      <input type="button" class="btn" value="1" onclick="f1.ans.value+='1' ">
+      <input type="button" class="btn" value="2" onclick="f1.ans.value+='2' ">
+      <input type="button" class="btn" value="3" onclick="f1.ans.value+='3' ">
+      <input type="button" class="op" value="-" onclick="f1.ans.value+='-' ">
+      <br> 
+            </br>
+            <input type="button" id="zero" value="0" onclick="f1.ans.value+='0' ">
+        <input type="button" class="op" value="." onclick="f1.ans.value+='.' ">
+      <input type="button" class="op" value="=" onclick="f1.ans.value=eval(f1.ans.value) ">
+     
+    </form>
+</html>
